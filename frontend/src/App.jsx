@@ -1,18 +1,21 @@
+import { Route, Routes } from 'react-router-dom'
+import Home from "./components/Home/index.jsx"
 
-import Nav from './components/Nav/index.jsx';
-import Footer from './components/Footer.jsx';
-import { Outlet } from 'react-router-dom';
+import Layout from './components/Layout'
+
+import './App.scss'
 
 function App() {
-    return (
-        <div className="d-flex flex-column min-vh-100">
-            <Nav />
-            <main className="flex">
-                    <Outlet />   
-            </main>
-            <Footer />
-        </div>
-    );
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+      
+        </Route>
+      </Routes>
+    </>
+  )
 }
 
-export default App;
+export default App
