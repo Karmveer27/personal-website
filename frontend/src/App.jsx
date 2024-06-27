@@ -1,5 +1,5 @@
-import './App.css';
-import Nav from './components/Nav.jsx';
+
+import Nav from './components/Nav/index.jsx';
 import Footer from './components/Footer.jsx';
 import { Outlet } from 'react-router-dom';
 
