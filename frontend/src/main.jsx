@@ -1,23 +1,16 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import ReactDOM from 'react-dom'
+import { BrowserRouter } from 'react-router-dom'
+import App from './App'
 import './index.scss'
-import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from "react-router-dom";
-import HomeScreen from "./screens/HomeScreen.jsx";
-import TestScreen from "./screens/TestScreen.jsx";
 
-const router = createBrowserRouter(
-    createRoutesFromElements(
-        <Route path="/"  element={<App />}>
-            <Route index={true} element={<HomeScreen />} />
-            <Route path={"/test"} element={<TestScreen />} />
-        </Route>
-    )
+ReactDOM.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+    ,
+  </React.StrictMode>,
+  document.getElementById('root')
 )
 
-const root = document.getElementById("root");
-ReactDOM.createRoot(root).render(
-    <React.StrictMode>
-            <RouterProvider router={router} />
-    </React.StrictMode>
-);
