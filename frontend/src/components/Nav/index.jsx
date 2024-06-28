@@ -41,34 +41,40 @@ const Nav = () => {
         </nav>
 
         <ul>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/karmveer-singh-474056236/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                color="#4d4d4e"
-                className="anchor-icon"
-              />
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="https://github.com/Karmveer27"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon
-                icon={faGithub}
-                color="#4d4d4e"
-                className="anchor-icon"
-              />
-            </a>
-          </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/slobodan-gaji%C4%87-006bb8b8/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              color="#4d4d4e"
+              className="anchor-icon"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/bobangajicsm"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faGithub}
+              color="#4d4d4e"
+              className="anchor-icon"
+            />
+          </a>
+        </li>
+       
       </ul>
+      <FontAwesomeIcon 
+          onClick={() => setShowNav(true)}
+          icon={faBars}
+          color="#ffd700"
+          size="3x"
+          className='hamburger-icon' />
 
         
     </div>
