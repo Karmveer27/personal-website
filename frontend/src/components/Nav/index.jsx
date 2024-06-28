@@ -43,7 +43,7 @@ const Nav = () => {
         <ul>
         <li>
           <a
-            href="https://www.linkedin.com/in/slobodan-gaji%C4%87-006bb8b8/"
+            href="https://www.linkedin.com/in/karmveer-singh-474056236/"
             target="_blank"
             rel="noreferrer"
           >
@@ -56,7 +56,7 @@ const Nav = () => {
         </li>
         <li>
           <a
-            href="https://github.com/bobangajicsm"
+            href="https://github.com/Karmveer27"
             target="_blank"
             rel="noreferrer"
           >

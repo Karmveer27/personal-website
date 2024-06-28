@@ -86,10 +86,11 @@
 .my-pic {
   height: auto;
   width: 500px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
+  position: relative;
+  left: 75%;
+  top: 45%;
   transform: translate(-50%, -50%);
+  border-radius: 10%;
 }
 
 @media screen and (max-width: 1200px) {
