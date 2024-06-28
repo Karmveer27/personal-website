@@ -82,7 +82,13 @@
       }
     }
   }
-  
+  .my-pic{
+    height: auto;
+    width: 500px;
+    position: absolute;
+    left: 60%;
+    top: 10%;
+  }
   
   
   @media screen and (max-width: 1200px) {
@@ -127,3 +133,4 @@
       margin: auto;
     }
   }
+

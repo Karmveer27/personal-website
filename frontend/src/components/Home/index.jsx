@@ -4,6 +4,7 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import LogoTitle from '../../assets/images/logo-s.png'
 import Logo from './Logo'
+import myPic from "../../assets/images/mypic1.png"
 import './index.scss'
 
 const Home = () => {
@@ -63,7 +64,7 @@ const Home = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={jobArray}
-              idx={22}
+              idx={16}
             />
           </h1>
           <h2>Full Stack Developer / Web Development Expert / Computer Science Student </h2>
@@ -71,7 +72,8 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
-        <Logo />
+        {/* <Logo /> */}
+        <img className="my-pic" src={myPic} />
       </div>
 
       <Loader type="pacman" />
