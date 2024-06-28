@@ -40,10 +40,13 @@
       }
   
       img {
-        margin-left: 20px;
+        margin-left: 3px;
         opacity: 0;
-        width: 32px;
+        width: 43px;
         height: auto;
+        position: relative; 
+        bottom: -7px; 
+        right: -5px;
         animation: rotateIn 1s linear both;
         animation-delay: 1.4s;
       }
