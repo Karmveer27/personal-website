@@ -36,9 +36,12 @@ const Home = () => {
   ]
 
   useEffect(() => {
-    return setTimeout(() => {
+    const timeoutId = setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 4000)
+
+    // Cleanup function to clear the timeout
+    return () => clearTimeout(timeoutId)
   }, [])
 
   return (
@@ -72,8 +75,7 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
-        {/* <Logo /> */}
-        <img className="my-pic" src={myPic} />
+        <img className="my-pic" src={myPic} alt="Karmveer" />
       </div>
 
       <Loader type="pacman" />
