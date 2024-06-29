@@ -2,6 +2,8 @@ import { useEffect, useState, useRef } from 'react';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
+import { toast, ToastContainer } from 'react-toastify'; 
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -23,12 +25,12 @@ const Contact = () => {
       .sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, form.current, import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
       .then(
         () => {
-          alert('Message successfully sent!');
-          window.location.reload(false);
+          toast.success('Message successfully sent!');
+          form.current.reset();
         },
-        () => {
-          console.error('Failed to send the message:', error);
-          alert('Failed to send the message, please try again');
+        (error) => {
+          toast.error('Failed to send the message, please try again');
+          console.error('Email send error:', error);
         }
       );
   };
@@ -99,6 +101,7 @@ const Contact = () => {
       </div>
 
       <Loader type="pacman" />
+      <ToastContainer />
     </>
   );
 };
