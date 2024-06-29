@@ -4,7 +4,7 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import LogoTitle from '../../assets/images/logo-s.png'
 import Logo from './Logo'
-import myPic from "../../assets/images/mypic1.png"
+import myPic from "../../assets/images/bigger-mypic1.png"
 import './index.scss'
 
 const Home = () => {
@@ -40,7 +40,7 @@ const Home = () => {
       setLetterClass('text-animate-hover')
     }, 4000)
 
-    // Cleanup function to clear the timeout
+    
     return () => clearTimeout(timeoutId)
   }, [])
 
