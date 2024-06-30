@@ -1,0 +1,20 @@
+{
+    "portfolio": [
+        {
+            "cover": "/src/assets/portfolio/professional/auis.png",
+            "title": "WDCC Events Portal",
+            "description": "React, TypeScript, Tailwind, ExpressJS, PostgresSQL, ClerkAuth, CI/CD, StrapiCMS, AWS, Docker, Scrum",
+            "url": "https://wdcc-auis-staging.fly.dev/",
+            "github": "https://github.com/UoaWDCC/auis-portal"
+        },
+        {
+            "cover": "/src/assets/portfolio/professional/harman.png",
+            "title": "Real Estate Agent Website",
+            "description": "React, TypeScript, ClerkAuth, EmailJS, ExpressJS, MongoDB, Bootstrap ",
+            "url": "",
+            "github": "",
+            "disclaimer": "Work In Progress"
+        }
+        
+    ]
+}
