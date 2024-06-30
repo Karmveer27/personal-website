@@ -1,14 +1,14 @@
 {
     "portfolio": [
         {
-            "cover": "/src/assets/portfolio/personal/ecommerce.png",
+            "cover": "assets/portfolio/personal/ecommerce.PNG",
             "title": "eCommerce Website",
             "description": "MongoDB, Express.js, React.Js, Node.js, Bootstrap, Redux, Mongoose",
             "github": "https://www.google.com/url?q=https://github.com/Karmveer27/eCommerce-Platform&sa=D&source=docs&ust=1719750122965791&usg=AOvVaw3dLcSN7P_pHL8R-LyA4XZy",
             "disclaimer": ""
         },
         {
-            "cover": "/src/assets/portfolio/personal/game.png",
+            "cover": "assets/portfolio/personal/game.PNG",
             "title": "Game Library",
             "description": "HTML/CSS, JavaScript, Python, Flask, Jinja, SQLAlchemy, Pytest",
             "url": "https://games-library-axo1.onrender.com/",
@@ -16,30 +16,29 @@
             "load": true
         },
         {
-            "cover": "/src/assets/portfolio/personal/platformer.png",
+            "cover": "assets/portfolio/personal/platformer.PNG",
             "title": "2D Platformer Game",
             "description": "Java, Java Swing",
             "github": "https://github.com/Karmveer27/Platformer-Game"
         },
         {
-            "cover": "/src/assets/portfolio/personal/todo.png",
+            "cover": "assets/portfolio/personal/todo.PNG",
             "title": "To-Do List Website",
             "description": "Javascript, HTML, SCSS, npm, Webpack",
             "url": "https://checkmate-85k3.onrender.com/",
             "github": "https://github.com/Karmveer27/Todo-List"
         },
         {
-            "cover": "/src/assets/portfolio/personal/swagger.png",
+            "cover": "assets/portfolio/personal/swagger.png",
             "title": "Te Reo Maori Website Backend",
             "description": "C#, .NET 7 , SQLite, Web API",
             "github": "https://github.com/Karmveer27/Teo-Reo-Maori-Website-Backend"
         },
         {
-            "cover": "/src/assets/portfolio/personal/portfolio.png",
+            "cover": "assets/portfolio/personal/portfolio.PNG",
             "title": "Portfolio Website",
             "description": "React, HTML, SCSS, EmailJS, animate.css",
             "github": "https://github.com/Karmveer27/personal-website"
         }
     ]
 }
-
