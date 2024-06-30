@@ -4,22 +4,24 @@ import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 import { toast, ToastContainer } from 'react-toastify'; 
 import 'react-toastify/dist/ReactToastify.css';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-
+      setLetterClass('text-animate-hover');
+    }, 3000);
     
-    return () => clearTimeout(timeoutId)
-  }, [])
+    return () => clearTimeout(timeoutId);
+  }, []);
 
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     emailjs
       .sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, form.current, import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
@@ -27,11 +29,12 @@ const Contact = () => {
         () => {
           toast.success('Message successfully sent!');
           form.current.reset();
+          setIsSubmitting(false);
         },
-
         (error) => {
           toast.error('Failed to send the message, please try again');
           console.error('Email send error:', error);
+          setIsSubmitting(false);
         }
       );
   };
@@ -48,36 +51,30 @@ const Contact = () => {
             />
           </h1>
           <p>
-          For any professional or business inquiries, please feel free to reach out to me through the contact form on this page. I am always open to discussing potential collaborations, project opportunities, or any other business-related matters.
+            For any professional or business inquiries, please feel free to reach out to me through the contact form on this page. I am always open to discussing potential collaborations, project opportunities, or any other business-related matters.
           </p>
           <p>
-          Should you require further information, such as a detailed CV or academic transcript, these documents can be provided upon request via email. Please do not hesitate to reach out with any specific requirements or questions you may have.
+            Should you require further information, such as a detailed CV or academic transcript, these documents can be provided upon request via email. Please do not hesitate to reach out with any specific requirements or questions you may have.
           </p>
-         
-
         </div>
-        
-       
 
         <div className="contact-form">
           <form ref={form} onSubmit={sendEmail}>
             <h2>Contact Me</h2>
             <ul>
               <div>
-              <li className="half">
-                <input placeholder="Name" type="text" name="name" required />
-              </li>
-              <li className="half">
-                <input
-                  placeholder="Email"
-                  type="email"
-                  name="email"
-                  required
-                />
-              </li>
-
+                <li className="half">
+                  <input placeholder="Name" type="text" name="name" required />
+                </li>
+                <li className="half">
+                  <input
+                    placeholder="Email"
+                    type="email"
+                    name="email"
+                    required
+                  />
+                </li>
               </div>
-              
               <li>
                 <input
                   placeholder="Subject"
@@ -94,7 +91,7 @@ const Contact = () => {
                 ></textarea>
               </li>
               <li>
-                <input type="submit" className="flat-button" value="SEND" />
+                <input type="submit" className="flat-button" value="SEND" disabled={isSubmitting} />
               </li>
             </ul>
           </form>
