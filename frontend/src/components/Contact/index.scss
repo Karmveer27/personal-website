@@ -94,7 +94,14 @@
       text-align: center;
       margin-top: 5px;
       float: right;
+
+      &:hover {
+        background: #ffd700;
+        color: #333;
+        cursor: pointer;
+      }
     }
+    
   }
 }
 
