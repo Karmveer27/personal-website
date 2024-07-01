@@ -31,6 +31,7 @@ const Nav = () => {
         <NavLink 
           exact="true"
           activeclassname="active"
+          className="home-link"
           to="/"
           onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
@@ -101,8 +102,6 @@ const Nav = () => {
           color="#ffd700"
           size="3x"
           className='hamburger-icon' />
-
-        
     </div>
   );
 }
