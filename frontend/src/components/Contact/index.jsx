@@ -54,7 +54,7 @@ const Contact = () => {
             For any professional or business inquiries, please feel free to reach out to me through the contact form on this page. I am always open to discussing potential collaborations, project opportunities, or any other business-related matters.
           </p>
           <p>
-            Should you require further information, such as a detailed CV or academic transcript, these documents can be provided upon request via email. Please do not hesitate to reach out with any specific requirements or questions you may have.
+            Should you require further information, such as a detailed CV or academic transcript, these documents can be provided upon request via email.
           </p>
         </div>
 
