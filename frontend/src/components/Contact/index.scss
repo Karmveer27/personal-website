@@ -3,6 +3,13 @@
   width: 100%;
   margin-top: 20px;
 
+  .text-zone h1{
+    margin-left: 5px;
+  }
+  .text-zone h1 span{
+    padding-bottom: 10px;
+    padding-top:10px;
+  }
 
   
 
@@ -12,8 +19,8 @@
     position: absolute;
     left: 50%;
     top: 25%;
-    
-    
+
+
     h2{
       color: #fff;
     font-size: 30px;
@@ -21,7 +28,10 @@
     margin: 0;
     font-family: 'Coolvetica';
     font-weight: 400;
-    padding-bottom: 5px;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    width: auto;
+    margin-bottom: 10px;
     }
     
     ul {
@@ -106,25 +116,49 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .contact-page {
-    
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
+  .contact-page {
     .text-zone,
     .contact-form {
-      width: 100%;
+      width: 100vw;
+      border-bottom: 0px;
+
+      h2 {
+        border-bottom: 0px;
+      }
     }
 
     .contact-form{
-    height: auto;
-    position: absolute;
-    padding: 10px;
-    left: 0%;
-    top: 110%;
+      height: auto;
+      position: absolute;
+      padding: 10px;
+      left: 0%;
+      top: 100%;
+
     }
 
-    textarea {
-      padding: 0px;
+
+
+
+    .contact-form form{
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
     }
+
+    .contact-form form ul{
+      max-width: 90%;
+    }
+
+
+
     
     
 
