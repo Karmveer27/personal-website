@@ -85,7 +85,7 @@
 
 .my-pic {
   height: auto;
-  width: 500px;
+  width: 400px;
   position: relative;
   left: 75%;
   top: 45%;
@@ -137,9 +137,8 @@
 
   .my-pic {
     width: 300px;
-    left: 40%;
-    
-    top: 110%;
+    left: 50%;
+    padding-top: 20px;
     transform: translateX(-50%);
   }
 
@@ -154,64 +153,5 @@
   }
 }
 
-@media screen and (max-width: 850px) {
-  .tags,
-  .home-page h1:before,
-  .home-page h1:after {
-    display: none;
-  }
 
-  .home-page .text-zone {
-    position: initial;
-    width: 100%;
-    transform: none;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .home-page .flat-button {
-    float: none;
-    display: block;
-    margin: 20px auto 0 auto;
-    width: 124px;
-  }
-
-  .logo-container {
-    position: relative;
-    width: 100px;
-    height: auto;
-    top: 50px;
-    right: 0;
-    box-sizing: border-box;
-    margin: auto;
-    left: 0;
-  }
-
-  .logo-container svg {
-    position: absolute;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: 0;
-    margin: auto;
-  }
-
-  .my-pic {
-    width: 300px;
-    left: 60%;
-    
-    top: 150%;
-    transform: translateX(-50%);
-  }
-
-  .text-zone h1 {
-    font-size: 36px;
-    line-height: 40px;
-  }
-
-  .text-zone h2 {
-    font-size: 10px;
-    letter-spacing: 2px;
-  }
-}
 
